@@ -57,7 +57,7 @@ int main(int argn, char** argv){
       def=def + "_HPP";
       out << "#ifndef " << def <<"\n";
       out << "#define " << def <<"\n\n";
-      out << "struct "<<classname<<"\n  \n};\n\n";
+      out << "struct "<<classname<<"{\n  \n};\n\n";
       out << "#endif //" << def <<"\n\n";
     }
   }
