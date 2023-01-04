@@ -38,7 +38,7 @@ int main(int argn, char** argv){
         std::cerr << "ERROR cpp, cannot open file. File=" << path_cpp <<std::endl;
     }else{
       std::cout << "Create cpp. File=" << path_cpp << std::endl;
-      out << "#include \"" << path_hpp.c_str() << "\"\n\n";
+      out << "#include \"" << path_hpp.string() << "\"\n\n";
     }
   }
   
